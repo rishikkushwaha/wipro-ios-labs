@@ -1,0 +1,29 @@
+Lab 1B – Access Control and Encapsulation
+
+1. Private
+
+Private members can only be accessed within their enclosing declaration and its extensions in the same file.
+
+Example: The balance variable in BankAccount is private. This prevents direct modification of the account balance.
+
+2. Fileprivate
+
+Fileprivate members can be accessed anywhere within the same Swift source file.
+
+Example: The fileMessage property in AccessDemo demonstrates fileprivate access.
+
+3. Internal
+
+Internal members can be accessed anywhere within the same module. This is the default access level in Swift.
+
+Example: The internalMessage property can be accessed from main.swift because both files belong to the same module.
+
+4. Public
+
+Public members can be accessed from other modules when the containing type is accessible.
+
+Example: BankAccount is public, and its deposit(), withdraw(), and checkBalance() methods are public.
+
+Conclusion
+
+Access control protects important data and prevents unwanted changes. Encapsulation allows users to interact with an object through controlled methods instead of directly modifying its internal properties.
